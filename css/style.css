@@ -27,11 +27,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  nav .logo {
-    padding: 1rem; }
-    nav .logo .iconify {
-      font-size: 3rem;
-      color: rgba(51, 59, 75, 0.8); }
+  nav .logo .iconify {
+    font-size: 3rem;
+    color: rgba(51, 59, 75, 0.8); }
   nav .toggle {
     display: none; }
   nav ul {
@@ -72,5 +70,39 @@ nav {
 #posts .content {
   color: #757a86;
   text-decoration: underline; }
+
+#feature .box {
+  height: 20vh;
+  position: relative;
+  transition: .2s; }
+  #feature .box:hover {
+    bottom: 10px;
+    transition: .2s;
+    background-color: rgba(51, 59, 75, 0.8);
+    color: #ecf6f8;
+    box-shadow: 2px 2px 2px 1px #ecf6f8, 10px 10px 7px 1px rgba(51, 59, 75, 0.8); }
+    #feature .box:hover .subtitle {
+      color: #ecf6f8; }
+  #feature .box .iconify {
+    font-size: 3rem; }
+  #feature .box .subtitle {
+    font-size: 1.7rem;
+    font-weight: bolder; }
+
+.footer {
+  background-color: #333B4B; }
+  .footer .title {
+    color: #ecf6f8; }
+  .footer .subtitle {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold; }
+  .footer li {
+    font-size: .9rem;
+    color: #ecf6f8;
+    margin-top: 1rem; }
+  .footer .iconify {
+    color: #ecf0f1;
+    font-size: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

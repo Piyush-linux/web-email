@@ -1,5 +1,6 @@
 // color
 $white: #ecf6f8;
+$light:#ecf0f1;
 $dark:rgba(51,59,75,0.8);
 $grey:#757a86;
 $black:#333B4B;
@@ -113,5 +114,51 @@ nav{
 	.content{
 		color: $grey;
 		text-decoration: underline;
+	}
+}
+// feature
+#feature{
+	.box{
+		height:20vh;
+			position: relative;
+			transition: .2s;
+		&:hover{
+			bottom: 10px;
+			transition: .2s;
+			background-color:$dark;
+			color:$white;
+			box-shadow: 2px 2px 2px 1px $white,10px 10px 7px 1px $dark;
+			.subtitle{
+				color:$white;
+			}
+		}
+		.iconify{
+			font-size: 3rem;
+		}
+		.subtitle{
+			font-size: 1.7rem;
+			font-weight: bolder
+		}
+	}
+}
+// footer
+.footer{
+	background-color: $black;
+	.title{
+		color:$white;
+	}
+	.subtitle{
+		font-size: 1rem;
+		color: #fff;
+		font-weight: bold;
+	}
+	li{
+		font-size: .9rem;
+		color: $white;
+		margin-top: 1rem;
+	}
+	.iconify{
+		color: $light;
+		font-size: 2rem;
 	}
 }
