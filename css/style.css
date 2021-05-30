@@ -22,6 +22,7 @@ body {
     background-color: #fff; }
 
 nav {
+  position: relative;
   width: 100vw;
   height: 20vh;
   display: flex;
@@ -30,9 +31,10 @@ nav {
   nav .logo .iconify {
     font-size: 3rem;
     color: rgba(51, 59, 75, 0.8); }
-  nav .toggle {
+  nav .toggle, nav .cross {
     display: none; }
   nav ul {
+    position: relative;
     display: inline-flex; }
     nav ul li {
       padding: 1rem;
@@ -54,15 +56,41 @@ nav {
       nav .toggle {
         display: inline-block; }
       nav ul {
-        display: none; } }
+        display: none;
+        z-index: 1;
+        padding-top: 10rem;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto; }
+        nav ul .cross {
+          display: block;
+          float: right; }
+          nav ul .cross .iconify {
+            font-size: 3rem; } }
 
 .hero .hero-body {
   padding: 0; }
-  .hero .hero-body h1 {
+  @media screen and (max-width: 750px) {
+    .hero .hero-body {
+      padding: 0;
+      text-align: center; } }
+  .hero .hero-body .title {
+    font-size: 4rem;
     font-weight: bolder; }
+    @media screen and (max-width: 750px) {
+      .hero .hero-body .title {
+        font-size: 2rem;
+        text-align: center; } }
   .hero .hero-body img {
     filter: drop-shadow(20px 20px 4px #757a86);
     transform: rotate(-5deg); }
+  @media screen and (max-width: 750px) {
+    .hero .hero-body .buttons {
+      justify-content: center; } }
 
 #posts .subtitle {
   margin: 0;
@@ -88,6 +116,9 @@ nav {
   #feature .box .subtitle {
     font-size: 1.7rem;
     font-weight: bolder; }
+  @media screen and (max-width: 750px) {
+    #feature .box {
+      height: auto; } }
 
 .footer {
   background-color: #333B4B; }
