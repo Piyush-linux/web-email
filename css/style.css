@@ -94,6 +94,7 @@ nav {
 
 #posts .subtitle {
   margin: 0;
+  padding-top: 1rem;
   font-weight: bold; }
 #posts .content {
   color: #757a86;
@@ -125,15 +126,21 @@ nav {
   .footer .title {
     color: #ecf6f8; }
   .footer .subtitle {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #fff;
     font-weight: bold; }
   .footer li {
     font-size: .9rem;
     color: #ecf6f8;
     margin-top: 1rem; }
+    .footer li:hover {
+      cursor: pointer;
+      text-decoration: underline; }
   .footer .iconify {
     color: #ecf0f1;
     font-size: 2rem; }
+  .footer .icons {
+    display: flex;
+    flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

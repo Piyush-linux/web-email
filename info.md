@@ -1,3 +1,15 @@
+# todo's
+__code__
+- [x] twitter card
+- [x] meta tags
+- [ ] meta content
+__style__
+- [x] post(mt-6)
+- [x] footer grid-col
+
+
+
+
 # Assets
 Font : Inter
 Color: darkGery(#333b48) LightGery(#b0b9bf) silver(#757a86) white(#ecf6f8)

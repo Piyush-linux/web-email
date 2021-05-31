@@ -143,6 +143,7 @@ nav{
 	.title{}
 	.subtitle{
 		margin: 0;
+		padding-top:1rem;
 		font-weight: bold;
 	}
 	.content{
@@ -185,7 +186,7 @@ nav{
 		color:$white;
 	}
 	.subtitle{
-		font-size: 1rem;
+		font-size: 1.3rem;
 		color: #fff;
 		font-weight: bold;
 	}
@@ -193,9 +194,17 @@ nav{
 		font-size: .9rem;
 		color: $white;
 		margin-top: 1rem;
+		&:hover{
+			cursor: pointer;
+			text-decoration: underline;
+		}
 	}
 	.iconify{
 		color: $light;
 		font-size: 2rem;
+	}
+	.icons{
+		display:flex;
+		flex-direction:column
 	}
 }
